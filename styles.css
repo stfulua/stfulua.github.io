@@ -135,6 +135,17 @@ h2 {
   animation: glow 1.5s infinite alternate;
 }
 
+.safe {
+  background: linear-gradient(90deg, #00FF7F, #00FFFF);
+  color: #1A1A1A;
+  font-size: 14px;
+  padding: 4px 10px;
+  border-radius: 8px;
+  text-shadow: none;
+  box-shadow: 0 0 10px #00FF7F, 0 0 15px #00FFFF;
+  animation: glow 1.5s infinite alternate;
+}
+
 p {
   color: #FFD1DC;
   font-size: 20px;
@@ -316,6 +327,6 @@ p.discord-profile {
 }
 
 @keyframes glow {
-  0% { box-shadow: 0 0 10px #FFD700; }
-  100% { box-shadow: 0 0 15px #FFA500, 0 0 20px #FFD700; }
+  0% { box-shadow: 0 0 10px #00FF7F; }
+  100% { box-shadow: 0 0 15px #00FFFF, 0 0 20px #00FF7F; }
 }
