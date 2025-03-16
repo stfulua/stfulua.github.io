@@ -121,7 +121,7 @@ h2 {
   margin-bottom: 25px;
   display: flex;
   align-items: center;
-  gap: 8px; /* Tightened gap for two tags */
+  gap: 8px;
 }
 
 .verified {
@@ -192,6 +192,7 @@ p.discord-profile {
 .project-btn {
   background: linear-gradient(90deg, #00FFFF, #00FF7F);
   box-shadow: 0 0 25px #00FFFF;
+  margin-bottom: 35px; /* Adds space between Projects and .buttons */
 }
 
 .project-btn:hover {
