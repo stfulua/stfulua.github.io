@@ -7,10 +7,14 @@
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
-<body>
+<body oncontextmenu="return false;">
   <div class="hero">
     <img src="logo.png" alt="stfulua Logo" class="logo">
     <h1>stfulua</h1>
+    <div class="search-container">
+      <input type="text" id="searchInput" placeholder="Search the Chaos...">
+      <button class="search-btn">🔍</button>
+    </div>
     <button class="scroll-btn" onclick="scrollDown()">Scroll Down ↓</button>
   </div>
 
@@ -21,7 +25,7 @@
       <a href="https://github.com/stfulua" target="_blank" class="btn">GitHub</a>
       <a href="https://x.com/stfulua_dev" target="_blank" class="btn">X</a>
       <a href="mailto:stfulua@proton.me" target="_blank" class="btn">Email</a>
-      <a href="#" target="_blank" class="btn">Projects (Soon)</a>
+      <a href="/projects.html" target="_blank" class="btn project-btn">Projects</a>
     </div>
   </div>
 
