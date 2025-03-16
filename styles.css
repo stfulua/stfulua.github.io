@@ -100,13 +100,14 @@ h1 {
 }
 
 .content, .container {
-  min-height: 100vh;
+  min-height: calc(100vh - 80px); /* Leaves room for footer */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   background: rgba(26, 26, 26, 0.95);
+  margin-bottom: 80px; /* Prevents overlap with footer */
 }
 
 .project-details {
@@ -183,6 +184,17 @@ p.tagline {
   background: linear-gradient(90deg, #00FFFF, #FFD1DC);
 }
 
+.discord-btn {
+  background: linear-gradient(90deg, #5865F2, #7289DA);
+  color: #FFFFFF;
+}
+
+.discord-btn:hover {
+  background: linear-gradient(90deg, #7289DA, #FFD1DC);
+  transform: scale(1.05);
+  box-shadow: 0 0 30px #5865F2;
+}
+
 .back-btn {
   background: linear-gradient(90deg, #FF1493, #FF69B4);
 }
@@ -251,16 +263,30 @@ p.tagline {
   text-shadow: 0 0 5px #00FF7F;
 }
 
+.button-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 20px;
+}
+
 .showcase iframe {
   border-radius: 15px;
   box-shadow: 0 0 25px #FF1493;
 }
 
-footer {
+.page-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(26, 26, 26, 0.95);
   color: #FFD1DC;
   font-size: 14px;
   text-shadow: 0 0 4px #FF69B4;
-  margin-top: 30px;
+  text-align: center;
+  padding: 15px 0;
+  box-shadow: 0 -5px 15px rgba(255, 105, 180, 0.3);
 }
 
 @keyframes pulse {
