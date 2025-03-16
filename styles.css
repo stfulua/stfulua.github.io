@@ -17,7 +17,7 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background: rgba(0, 0, 0, 0.5); /* Slight overlay for readability */
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .logo {
@@ -34,6 +34,43 @@ h1 {
   font-size: 48px;
   text-shadow: 0 0 10px #FF1493, 0 0 20px #FF69B4;
   margin: 0;
+}
+
+.search-container {
+  margin: 30px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#searchInput {
+  padding: 12px;
+  font-size: 16px;
+  background: rgba(42, 43, 58, 0.9);
+  color: #FFFFFF;
+  border: 3px solid #FF00FF;
+  border-radius: 10px;
+  width: 300px;
+  box-shadow: 0 0 15px #FF00FF;
+  outline: none;
+}
+
+.search-btn {
+  background: linear-gradient(90deg, #FF1493, #FF69B4);
+  color: #FFFFFF;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  text-shadow: 0 0 5px #FF1493;
+  cursor: pointer;
+  box-shadow: 0 0 15px #FF69B4;
+  transition: transform 0.3s;
+}
+
+.search-btn:hover {
+  transform: scale(1.1);
+  background: linear-gradient(90deg, #FF69B4, #FFD1DC);
 }
 
 .scroll-btn {
@@ -56,6 +93,16 @@ h1 {
 }
 
 .content {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: rgba(26, 26, 26, 0.9);
+}
+
+.container {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -101,6 +148,46 @@ p {
 .btn:hover {
   background: linear-gradient(90deg, #FF00FF, #FFD1DC);
   transform: scale(1.05);
+}
+
+.project-btn {
+  background: linear-gradient(90deg, #00FFFF, #00FF7F);
+  box-shadow: 0 0 20px #00FFFF;
+}
+
+.project-btn:hover {
+  background: linear-gradient(90deg, #00FF7F, #FFD1DC);
+  transform: scale(1.1);
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin: 40px 0;
+}
+
+.project-card {
+  background: rgba(42, 43, 58, 0.9);
+  padding: 25px;
+  border-radius: 15px;
+  width: 300px;
+  box-shadow: 0 0 20px #FF69B4;
+}
+
+.project-card h2 {
+  color: #FF69B4;
+  font-size: 24px;
+  text-shadow: 0 0 5px #FF1493;
+}
+
+.back-btn {
+  background: linear-gradient(90deg, #FF1493, #FF69B4);
+}
+
+.back-btn:hover {
+  background: linear-gradient(90deg, #FF69B4, #FFD1DC);
 }
 
 @keyframes pulse {
