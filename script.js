@@ -5,5 +5,4 @@ function scrollDown() {
   });
 }
 
-// Disable right-click (comment this out if you change your mind, bro)
 document.addEventListener('contextmenu', event => event.preventDefault());
