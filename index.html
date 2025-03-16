@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>stfulua</title>
+  <title>stfulua | Pink Chaos</title>
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
@@ -12,21 +12,22 @@
     <img src="logo.png" alt="stfulua Logo" class="logo">
     <h1>stfulua</h1>
     <div class="search-container">
-      <input type="text" id="searchInput" placeholder="Search for projects...">
-      <button class="search-btn">🔍</button>
+      <input type="text" id="searchInput" placeholder="Search the Chaos..." onkeydown="if(event.key === 'Enter') searchProjects()">
+      <button class="search-btn" onclick="searchProjects()">🔍</button>
     </div>
     <button class="scroll-btn" onclick="scrollDown()">Scroll Down ↓</button>
   </div>
 
   <div class="content">
-    <h2>Welcome to MG Team</h2>
-    <p>Just coding, and creating the impossible.</p>
+    <h2>Welcome to the Chaos</h2>
+    <p>Just a coder vibin’ in pink and darkness.</p>
     <div class="buttons">
       <a href="https://github.com/stfulua" target="_blank" class="btn">GitHub</a>
       <a href="https://x.com/stfulua_dev" target="_blank" class="btn">X</a>
       <a href="mailto:stfulua@proton.me" target="_blank" class="btn">Email</a>
       <a href="/projects.html" target="_blank" class="btn project-btn">Projects</a>
     </div>
+    <footer>Copyright 2025 MG [stfulua]</footer>
   </div>
 
   <script src="script.js"></script>
