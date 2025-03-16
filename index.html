@@ -3,50 +3,59 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>stfulua</title>
-  <style>
-    body {
-      background: #1A1B27;
-      color: #FFFFFF;
-      font-family: 'Fira Code', monospace;
-      text-align: center;
-      margin: 0;
-      padding: 30px;
-    }
-    h1 {
-      background: linear-gradient(90deg, #FF6EC7, #6EFFFF, #FF00FF);
-      -webkit-background-clip: text;
-      color: transparent;
-      font-size: 50px;
-      text-shadow: 0 0 10px #FF00FF;
-    }
-    p {
-      color: #00FFFF;
-      text-shadow: 0 0 5px #00FFFF;
-      font-size: 20px;
-    }
-    .badges img {
-      margin: 8px;
-    }
-    a {
-      color: #FF69B4;
-      text-decoration: none;
-      text-shadow: 0 0 3px #FF69B4;
-    }
-  </style>
+  <title>stfulua | Chaos Hub</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>👋 Hi, I’m stfulua</h1>
-  <p>Chaos Coder | Reverse Engineering Maniac | Building MGH Builder</p>
-  <div class="badges">
-    <img src="https://img.shields.io/badge/Chaos%20Level-Max-FF4500?style=for-the-badge&logo=explosion&logoColor=white">
-    <img src="https://img.shields.io/badge/Vibe%20Check-Passing-00FF7F?style=for-the-badge&logo=check-circle&logoColor=white">
-    <img src="https://img.shields.io/badge/Coding-Fueled%20by%20Chaos-FF00FF?style=for-the-badge&logo=fire&logoColor=white">
+  <div class="container">
+    <h1>👋 Yo, I’m stfulua</h1>
+    <p class="tagline">Chaos Coder | Reverse Engineering Maniac | MGH Builder in Progress</p>
+    
+    <!-- Navigation -->
+    <div class="nav">
+      <a href="https://github.com/stfulua" target="_blank">GitHub</a>
+      <a href="https://x.com/stfulua_dev" target="_blank">X</a>
+      <a href="mailto:stfulua@proton.me" target="_blank">Email</a>
+    </div>
+
+    <!-- Search Bar -->
+    <div class="search-container">
+      <input type="text" id="searchInput" placeholder="Search Categories..." onkeyup="searchCategories()">
+      <button onclick="searchCategories()">🔍</button>
+    </div>
+
+    <!-- Category Space -->
+    <h2>Category Space</h2>
+    <div class="categories" id="categoryList">
+      <button class="category-btn" onclick="window.location.href='/arctic.html'">Arctic</button>
+      <button class="category-btn" onclick="window.location.href='/coming-soon.html'">Neon Vault</button>
+      <button class="category-btn" onclick="window.location.href='/coming-soon.html'">Cyber Abyss</button>
+    </div>
+
+    <!-- Projects Section -->
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="project-card">
+        <h3>MGH Builder</h3>
+        <p>Reverse engineering tool in the works.</p>
+        <a href="https://youtube.com" target="_blank" class="btn">Tutorial</a>
+        <a href="#" target="_blank" class="btn">Download (Soon)</a>
+      </div>
+      <div class="project-card">
+        <h3>Chaos Toolkit</h3>
+        <p>Random utils for coders.</p>
+        <a href="https://youtube.com" target="_blank" class="btn">Video</a>
+        <a href="#" target="_blank" class="btn">Download (WIP)</a>
+      </div>
+    </div>
+
+    <!-- Badges -->
+    <div class="badges">
+      <img src="https://img.shields.io/badge/Chaos%20Level-Max-FF4500?style=for-the-badge&logo=explosion&logoColor=white">
+      <img src="https://img.shields.io/badge/Vibe%20Check-Passing-00FF7F?style=for-the-badge&logo=check-circle&logoColor=white">
+      <img src="https://img.shields.io/badge/Coding-Fueled%20by%20Chaos-FF00FF?style=for-the-badge&logo=fire&logoColor=white">
+    </div>
   </div>
-  <p>
-    <a href="https://github.com/stfulua">GitHub</a> | 
-    <a href="https://x.com/stfulua_dev">X</a> | 
-    <a href="mailto:stfulua@proton.me">Email</a>
-  </p>
+  <script src="script.js"></script>
 </body>
 </html>
