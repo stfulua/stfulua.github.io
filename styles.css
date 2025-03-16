@@ -132,6 +132,13 @@ p.tagline {
   font-size: 22px;
 }
 
+p.discord-profile {
+  color: #7289DA; /* Discord blue */
+  font-size: 18px;
+  text-shadow: 0 0 6px #5865F2;
+  margin: 10px 0 20px 0;
+}
+
 .buttons {
   display: flex;
   flex-wrap: wrap;
