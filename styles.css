@@ -1,0 +1,109 @@
+body {
+  background: url('/background.png') no-repeat center center fixed;
+  background-size: cover;
+  background-color: #1A1A1A; /* Dark grey fallback */
+  margin: 0;
+  padding: 0;
+  font-family: 'Press Start 2P', cursive;
+  color: #FFFFFF;
+  height: 200vh; /* Extra height for scrolling */
+  overflow-x: hidden;
+}
+
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5); /* Slight overlay for readability */
+}
+
+.logo {
+  width: 200px;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 50%;
+  box-shadow: 0 0 20px #FF69B4;
+  animation: pulse 2s infinite alternate;
+}
+
+h1 {
+  color: #FF69B4;
+  font-size: 48px;
+  text-shadow: 0 0 10px #FF1493, 0 0 20px #FF69B4;
+  margin: 0;
+}
+
+.scroll-btn {
+  background: linear-gradient(90deg, #FF69B4, #FF1493);
+  color: #FFFFFF;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  text-shadow: 0 0 5px #FF1493;
+  cursor: pointer;
+  margin-top: 30px;
+  box-shadow: 0 0 15px #FF69B4;
+  transition: transform 0.3s;
+}
+
+.scroll-btn:hover {
+  transform: scale(1.1);
+  background: linear-gradient(90deg, #FF1493, #FFD1DC);
+}
+
+.content {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: rgba(26, 26, 26, 0.9);
+}
+
+h2 {
+  color: #FF1493;
+  font-size: 32px;
+  text-shadow: 0 0 8px #FF69B4;
+  margin-bottom: 20px;
+}
+
+p {
+  color: #FFD1DC;
+  font-size: 18px;
+  text-shadow: 0 0 5px #FF69B4;
+  margin-bottom: 30px;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btn {
+  background: linear-gradient(90deg, #FF69B4, #FF00FF);
+  color: #FFFFFF;
+  padding: 15px 30px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 16px;
+  text-shadow: 0 0 3px #FF1493;
+  box-shadow: 0 0 15px #FF69B4;
+  transition: transform 0.3s;
+}
+
+.btn:hover {
+  background: linear-gradient(90deg, #FF00FF, #FFD1DC);
+  transform: scale(1.05);
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 20px #FF69B4; }
+  100% { box-shadow: 0 0 30px #FF1493, 0 0 40px #FF69B4; }
+}
