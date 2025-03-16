@@ -1,12 +1,12 @@
 body {
   background: url('/background.png') no-repeat center center fixed;
   background-size: cover;
-  background-color: #1A1A1A; /* Dark grey fallback */
+  background-color: #1A1A1A;
   margin: 0;
   padding: 0;
   font-family: 'Press Start 2P', cursive;
   color: #FFFFFF;
-  height: 200vh; /* Extra height for scrolling */
+  height: 200vh;
   overflow-x: hidden;
 }
 
@@ -92,17 +92,7 @@ h1 {
   background: linear-gradient(90deg, #FF1493, #FFD1DC);
 }
 
-.content {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  background: rgba(26, 26, 26, 0.9);
-}
-
-.container {
+.content, .container {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -124,6 +114,10 @@ p {
   font-size: 18px;
   text-shadow: 0 0 5px #FF69B4;
   margin-bottom: 30px;
+}
+
+p.tagline {
+  font-size: 20px;
 }
 
 .buttons {
@@ -176,10 +170,24 @@ p {
   box-shadow: 0 0 20px #FF69B4;
 }
 
+.project-card.featured {
+  transform: scale(1.1);
+  box-shadow: 0 0 30px #FF1493;
+  background: rgba(66, 0, 66, 0.9);
+}
+
 .project-card h2 {
   color: #FF69B4;
   font-size: 24px;
   text-shadow: 0 0 5px #FF1493;
+}
+
+.check-btn {
+  background: linear-gradient(90deg, #FFD1DC, #FF69B4);
+}
+
+.check-btn:hover {
+  background: linear-gradient(90deg, #FF69B4, #FF00FF);
 }
 
 .back-btn {
@@ -188,6 +196,16 @@ p {
 
 .back-btn:hover {
   background: linear-gradient(90deg, #FF69B4, #FFD1DC);
+}
+
+.docs {
+  text-align: left;
+  max-width: 500px;
+  margin: 20px auto;
+}
+
+.docs h2 {
+  font-size: 24px;
 }
 
 @keyframes pulse {
