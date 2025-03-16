@@ -1,0 +1,170 @@
+body {
+  background: url('/background.png') no-repeat center center fixed;
+  background-size: cover;
+  color: #FFFFFF;
+  font-family: 'Fira Code', monospace;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+.container {
+  text-align: center;
+  padding: 40px;
+  background: rgba(26, 27, 39, 0.8);
+  border-radius: 15px;
+  margin: 20px auto;
+  max-width: 1000px;
+}
+
+h1 {
+  background: linear-gradient(90deg, #FF6EC7, #6EFFFF, #FF00FF);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 50px;
+  text-shadow: 0 0 10px #FF00FF;
+  margin-bottom: 10px;
+}
+
+h2 {
+  color: #00FFFF;
+  text-shadow: 0 0 5px #00FFFF;
+  font-size: 28px;
+}
+
+p.tagline {
+  color: #FF69B4;
+  text-shadow: 0 0 5px #FF69B4;
+  font-size: 20px;
+}
+
+.nav a {
+  color: #FFD700;
+  text-decoration: none;
+  margin: 0 15px;
+  text-shadow: 0 0 3px #FFD700;
+  font-size: 18px;
+}
+
+.nav a:hover {
+  color: #FF4500;
+}
+
+.search-container {
+  margin: 20px 0;
+}
+
+#searchInput {
+  padding: 10px;
+  font-size: 16px;
+  background: #2A2B3A;
+  color: #FFFFFF;
+  border: 2px solid #FF00FF;
+  border-radius: 5px;
+  width: 300px;
+}
+
+.search-container button {
+  padding: 10px 15px;
+  background: #FF4500;
+  border: none;
+  color: #FFFFFF;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.categories {
+  margin: 20px 0;
+}
+
+.category-btn {
+  background: linear-gradient(90deg, #FF6EC7, #6EFFFF);
+  color: #1A1B27;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  margin: 10px;
+  cursor: pointer;
+  text-shadow: 0 0 3px #FFFFFF;
+}
+
+.category-btn:hover {
+  background: linear-gradient(90deg, #FF00FF, #FFD700);
+}
+
+.projects {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.project-card {
+  background: rgba(42, 43, 58, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+}
+
+.project-card h3 {
+  color: #00FF7F;
+  text-shadow: 0 0 3px #00FF7F;
+}
+
+.btn {
+  display: inline-block;
+  background: #FF00FF;
+  color: #FFFFFF;
+  padding: 12px 25px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin: 10px;
+  text-shadow: 0 0 2px #FFFFFF;
+  font-size: 16px;
+}
+
+.btn:hover {
+  background: #FFD700;
+  color: #1A1B27;
+}
+
+.discord-btn {
+  background: #5865F2;
+}
+
+.discord-btn:hover {
+  background: #7289DA;
+}
+
+.download-btn {
+  background: #00FF7F;
+  color: #1A1B27;
+}
+
+.download-btn:hover {
+  background: #FFD700;
+}
+
+.showcase-btn {
+  background: #FF4500;
+}
+
+.showcase-btn:hover {
+  background: #FF69B4;
+}
+
+.badges img {
+  margin: 8px;
+}
+
+.content p {
+  color: #FFFFFF;
+  font-size: 18px;
+}
+
+iframe {
+  border-radius: 10px;
+  margin-top: 20px;
+}
